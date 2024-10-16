@@ -1,0 +1,13 @@
+<div class="dropdown">
+    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+        aria-expanded="false" [ngClass]="['btn-' + variant]" [disabled]="disabled">
+        {{ selectedValue ? selectedValue : placeholder }}
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li *ngFor="let option of options">
+            <button class="dropdown-item" type="button" (click)="onSelect(option.value)">
+                {{ option.label }}
+            </button>
+        </li>
+    </ul>
+</div>

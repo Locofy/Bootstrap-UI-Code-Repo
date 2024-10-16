@@ -1,0 +1,14 @@
+<div [ngClass]="className" ngbAccordion style="width: 100%;">
+    <div ngbAccordionItem [collapsed]="collapsed || false" [disabled]="disabled || false">
+        <h2 ngbAccordionHeader>
+            <button ngbAccordionButton>{{ title }}</button>
+        </h2>
+        <div ngbAccordionCollapse>
+            <div ngbAccordionBody>
+                <ng-template>
+                    {{ content }}
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</div>

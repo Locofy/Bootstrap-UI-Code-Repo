@@ -1,0 +1,4 @@
+<ngb-progressbar [class]="className" [value]="value" [max]="max" [striped]="striped" [animated]="animated"
+    [type]="type">
+    <ng-container *ngIf="showValue">{{ value }} / {{ max }}</ng-container>
+</ngb-progressbar>

@@ -1,0 +1,5 @@
+<div class="input-group">
+    <input class="form-control" [ngModel]="model" [minDate]="minDate" [maxDate]="maxDate" [disabled]="disabled"
+        placeholder="{{ placeholder }}" ngbDatepicker #d="ngbDatepicker" (dateSelect)="onDateSelect($event)" />
+    <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+</div>

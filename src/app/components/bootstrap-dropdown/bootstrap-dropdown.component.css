@@ -1,0 +1,4 @@
+.dropdown.disabled .dropdown-toggle {
+  pointer-events: none;
+  opacity: 0.65;
+}
